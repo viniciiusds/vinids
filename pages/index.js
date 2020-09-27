@@ -5,21 +5,36 @@ import styles from '@scss/Home.module.scss';
 import Head from '@components/Layout/Head';
 
 const colors = [
-   'white',
    'red',
+   'black',
    'blue',
+   'black',
    'green',
+   'black',
+   'white',
+   'black',
    'yellow',
+   'black',
    'purple',
+   'black',
    'grey',
+   'black',
    'orange',
+   'black',
    'brown',
+   'black',
    'aqua',
+   'black',
    'wheat',
+   'black',
    'blueviolet',
+   'black',
    'chartreuse',
+   'black',
    'cornflowerblue',
+   'black',
    'crimson',
+   'black',
 ];
 
 let interval;
@@ -41,7 +56,7 @@ export default function Home() {
             i = (i + 1) % colors.length;
          };
 
-         interval = setInterval(fnChangeBackground, 100);
+         interval = setInterval(fnChangeBackground, 50);
       } else {
          clearInterval(interval);
          container.current.style.backgroundColor = 'black';
