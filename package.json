@@ -1,0 +1,23 @@
+{
+   "name": "vinids",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+   },
+   "dependencies": {
+      "@material-ui/core": "^4.11.0",
+      "next": "9.5.3",
+      "react": "16.13.1",
+      "react-dom": "16.13.1"
+   },
+   "devDependencies": {
+      "babel-eslint": "^10.1.0",
+      "eslint": "^7.9.0",
+      "eslint-plugin-react": "^7.20.0",
+      "eslint-plugin-react-hooks": "^4.1.0",
+      "sass": "^1.26.11"
+   }
+}
