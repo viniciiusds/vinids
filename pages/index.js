@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useReducer, useRef } from 'react';
 import { Button } from '@material-ui/core';
 
 import styles from '@scss/Home.module.scss';
@@ -43,9 +43,7 @@ export default function Home() {
 
    const container = useRef(null);
 
-   const [clicked, setClicked] = useState(false);
-
-   const fnClick = () => setClicked(!clicked);
+   const [clicked, toggleClicked] = useReducer(v => !v, false);
 
    useEffect(() => {
       if (clicked) {
@@ -68,7 +66,7 @@ export default function Home() {
          <Head />
 
          <div className={styles.container} ref={container}>
-            <Button onClick={fnClick}>vini</Button>
+            <Button onClick={toggleClicked}>vini</Button>
          </div>
 
       </Fragment>
