@@ -1,0 +1,28 @@
+{
+   "icons": [{
+      "src": "/static/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+   }, {
+      "src": "/static/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+   }, {
+      "src": "/static/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+   }],
+   "name": "vini",
+   "short_name": "vini",
+   "description": "vini",
+   "categories": [],
+   "orientation": "portrait",
+   "start_url": "/",
+   "scope": "/",
+   "background_color": "#000000",
+   "theme_color": "#000000",
+   "dir": "ltr",
+   "display": "standalone",
+   "lang": "pt-BR",
+   "prefer_related_applications": true
+}
