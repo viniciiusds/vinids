@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useReducer, useRef } from 'react';
 import { Button } from '@material-ui/core';
 
-import styles from '@scss/Home.module.scss';
-import Head from '@components/Layout/Head';
+import styles from '@/scss/Home.module.scss';
+import Head from '@/components/Layout/Head';
 
 const colors = [
    'red',
@@ -37,9 +37,9 @@ const colors = [
    'black',
 ];
 
-let interval;
+let interval: NodeJS.Timer;
 
-export default function Home() {
+export default function Vinids() {
 
    const container = useRef(null);
 
