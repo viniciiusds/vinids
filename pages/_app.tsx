@@ -1,8 +1,9 @@
+import React from 'react';
 import type { AppProps } from 'next/app'
 
 import '@/scss/app.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
    return <Component {...pageProps} />;
 }
 

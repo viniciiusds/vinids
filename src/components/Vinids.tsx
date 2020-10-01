@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useReducer, useRef } from 'react';
+import React, { Fragment, useEffect, useReducer, useRef } from 'react';
 import { Button } from '@material-ui/core';
 
 import styles from '@/scss/Home.module.scss';
@@ -39,7 +39,7 @@ const colors = [
 
 let interval: NodeJS.Timer;
 
-export default function Vinids() {
+const Vinids: React.FC = () => {
 
    const container = useRef(null);
 
@@ -72,3 +72,5 @@ export default function Vinids() {
       </Fragment>
    );
 }
+
+export default Vinids;

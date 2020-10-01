@@ -1,5 +1,9 @@
+import React from 'react';
+
 import Vinids from '@/components/Vinids';
 
-export default function Home() {
+const NotFound: React.FC = () => {
    return <Vinids />;
 }
+
+export default NotFound;
