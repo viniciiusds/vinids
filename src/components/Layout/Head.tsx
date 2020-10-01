@@ -1,6 +1,7 @@
+import React from 'react';
 import NextHead from 'next/head';
 
-export default function Head() {
+const Head: React.FC = () => {
    return (
       <NextHead>
         <title>vini</title>
@@ -11,3 +12,5 @@ export default function Head() {
       </NextHead>
    );
 }
+
+export default Head;
